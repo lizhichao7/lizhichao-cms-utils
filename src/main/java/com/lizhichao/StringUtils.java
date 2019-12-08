@@ -148,5 +148,13 @@ public class StringUtils {
 		Matcher matcher = compile.matcher(str);
 		return matcher.matches();
 	}
+	
+	public static boolean isNumber(String str) {
+		String regex = "^\\d{1,}$";
+		Pattern compile = Pattern.compile(regex);
+		Matcher matcher = compile.matcher(str);
+		boolean find = matcher.find();
+		return find;
+	}
 
 }
