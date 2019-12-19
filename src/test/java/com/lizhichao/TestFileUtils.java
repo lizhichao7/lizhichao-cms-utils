@@ -48,11 +48,11 @@ public class TestFileUtils {
 		System.out.println("比较结束");
 	}
 	
-	@Test
+	//@Test
 	public void testReadLines() throws IOException {
 		
 		List<String> lines = FileUtils.readByLines("D:\\project\\07b - 副本\\"
-				+ "src\\main\\java\\test\\com\\zhu"
+				+ "src\\main\\java\\test\\com\\lizhichao"
 				+ "zg\\unit15\\TestJoinTest.java");
 		
 		lines.forEach(x->{System.out.println(" x is " + x);});
@@ -63,7 +63,7 @@ public class TestFileUtils {
 	public void testCopy() throws IOException {
 		String src="D:\\project\\07b\\07b.zip";
 		String dst="D:\\project\\07b\\07b2.zip";
-		FileUtils.copy(src,dst );
+		//FileUtils.copy(src,dst );
 	} 
 	
 	
